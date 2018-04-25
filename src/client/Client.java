@@ -7,13 +7,13 @@ public class Client {
 
 	public static void main(String[] args) {
 
-		AbstractFactory factory1 = new ConcreteFactory1();
-		AbstractFactory factory2 = new ConcreteFactory2();
+		CarFactory factoryS = new SportsCarFactory();
+		CarFactory factoryF = new FamilyCarFactory();
 		
-		AbstractProductA myProduct1 = factory1.createProductA();
-		AbstractProductA myProduct2 = factory2.createProductA();
-		AbstractProductB myProduct3 = factory1.createProductB();
-		AbstractProductB myProduct4 = factory2.createProductB();
+		FamilyCars myCar1 = factoryS.createCarA();
+		FamilyCars myCar2 = factoryF.createCarA();
+		SportsCars myCar3 = factoryS.createCarB();
+		SportsCars myCar4 = factoryF.createCarB();
 	}
 	
 }

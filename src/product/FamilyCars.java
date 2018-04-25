@@ -1,6 +1,6 @@
 package product;
 
-public abstract class AbstractProductA {
+public abstract class FamilyCars {
 	
 	public abstract String toString();
 

@@ -1,15 +1,15 @@
 package product;
 
-public class ProductB2 extends AbstractProductB {
+public class FamilyA2 extends FamilyCars {
 	
-	public ProductB2() {
+	public FamilyA2() {
 		System.out.println(toString());
 	}
 
 	@Override
 	public String toString() {
 		
-		return "This is product B2.";
+		return "Škoda Superb 2.0 TSI";
 	}
 
 }
