@@ -1,8 +1,10 @@
 package factory;
 
+import product.*;
+
 public abstract class AbstractFactory {
 	
-	public abstract void createProductA();
-	public abstract void createProductB();
+	public abstract AbstractProductA createProductA();
+	public abstract AbstractProductB createProductB();
 	
 }

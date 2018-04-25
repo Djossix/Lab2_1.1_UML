@@ -1,15 +1,19 @@
 package factory;
 
+import product.*;
+
 public class ConcreteFactory2 extends AbstractFactory {
 
 	@Override
-	public void createProductA() {
+	public AbstractProductA createProductA() {
 		System.out.println("ProductA2");
+		return new ProductA2();
 	}
 
 	@Override
-	public void createProductB() {
+	public AbstractProductB createProductB() {
 		System.out.println("ProductB2");
+		return new ProductB2();
 	}
 
 }
